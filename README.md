@@ -16,6 +16,8 @@ buka file ".env" dan lakukan konfigurasi pada APP_URL=http://localhost
 
 Lakukan konfigurasi database aplikasi (pada pembuatan menggunakan MariaDB)
 
+ketikan perintah "php artisan migrate" pada command prompt dan tunggu proses hingga selesai
+
 Untuk menjalankan ketikan "php artisan serve" dan copy link yang tersedia kedalam browser
 
 Selesai
