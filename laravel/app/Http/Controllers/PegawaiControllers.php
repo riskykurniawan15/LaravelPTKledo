@@ -11,8 +11,8 @@ class PegawaiControllers extends Controller
     public function index(){
         $pegawai = Pegawai::selectRaw(
             "id_pegawais,".
-            "SUBSTRING_INDEX(UPPER(nama),' ',1) as nama,".
-            "CONCAT('Rp ',FORMAT(total,0)) as total"
+            "SUBSTRING_INDEX(UPPER(nama),' ',1) as Nama_Pegawai,".
+            "CONCAT('Rp ',FORMAT(total,0)) as Total_Gaji"
         )->paginate(2);
 
         return response()->JSON([

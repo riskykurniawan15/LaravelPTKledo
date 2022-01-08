@@ -21,9 +21,9 @@ class GajiControllers extends Controller
 
         $gaji = Gaji::join('pegawais', 'pegawais.id_pegawais', '=', 'gajis.id_pegawais')
         ->selectRaw(
-            "DATE_FORMAT(periods_gaji, '%Y-%m-%d %H:%i') as Waktu,".
+            "DATE_FORMAT(periods_gaji, '%Y/%m/%d %H:%i') as Waktu,".
             "SUBSTRING_INDEX(UPPER(nama),' ',1) as Nama_Pegawai,".
-            "CONCAT('Rp ',FORMAT(total,0)) as Total_Gaji"
+            "CONCAT('Rp ',FORMAT(total,0)) as Total_Diterima"
         )
         ->whereYear('periods_gaji', '=', $year)
         ->whereMonth('periods_gaji', '=', $month)
