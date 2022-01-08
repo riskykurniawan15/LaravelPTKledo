@@ -1,3 +1,7 @@
+# Author
+
+Risky Kurniawan
+
 # LaravelPTKledo
  
 Cara Instalasi Aplikasi
