@@ -1,0 +1,502 @@
+{
+	"info": {
+		"_postman_id": "6ef73364-bc7d-48dd-afcf-31982aa6d3a4",
+		"name": "kledo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "pegawai",
+			"item": [
+				{
+					"name": "GetPegawai",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/pegawai",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"pegawai"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetPegawai",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/pegawai",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"pegawai"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Jan 2022 05:47:07 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Jan 2022 05:47:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6ImpRTVZFclh6WDFFK2poRyt4VVhnSFE9PSIsInZhbHVlIjoicUpqQTVPVE8xaEZhdWtJcTV3UFdlUGp6MnVWZUxGVXVSNkdVWlVLeWtxcWp0L214YTIya3BKVWFjd3YrMWY0dEJueU9telFVeHFqTjVSTmozTTdmWkxNU0dHcFBTMW9FdkYzWlpGMUcxYjMzd055aytGY3RqK2FPZWlZaE9MdzYiLCJtYWMiOiI3ZDNhMzBjZmY1YzFhZWQxMjkyY2YxOTFiZjYyZTI3YzQxYmZmMjE2ZjM0NDg5NjdlZTdkNmMwMjZjODhiNzA5IiwidGFnIjoiIn0%3D; expires=Sat, 08-Jan-2022 07:47:07 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6ImpFODlHQjJaUW0rOXd0RkN4UmtKYVE9PSIsInZhbHVlIjoiZjBiYVJQOXNQTkJZUjVnRW5VclVrNnY0SnNSend1WENDRU9aakdaaElmSkJTWlNMOVl4VTJMLzI5dHJhaDExRE8xbXBTMkNOWEZCSW5JNVVCMzBVZ1lsZ1JRL0dteTBrTTExZkJiUkdMRjliQUZJdE1XeXV6bEMzck5QRjJDYVoiLCJtYWMiOiIxY2RiZDNmNDgxNDE5NjZkNGU1ZDU0Y2M4M2I4ZjgxNmY4ODU1NjZhZjg2MzFmYmMzMjc5NTNkNzkyMzJkYzYxIiwidGFnIjoiIn0%3D; expires=Sat, 08-Jan-2022 07:47:07 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"meta\": {\n        \"paginator\": {\n            \"item_total\": 2,\n            \"item_per_pages\": 2,\n            \"url_previous\": null,\n            \"url_next\": null\n        }\n    },\n    \"data\": [\n        {\n            \"id_pegawais\": 1,\n            \"nama\": \"RISKY\",\n            \"total\": \"Rp 8,500,000\"\n        },\n        {\n            \"id_pegawais\": 2,\n            \"nama\": \"SANDI\",\n            \"total\": \"Rp 4,500,000\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "StorePegawai",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "Abdul",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "6000000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/pegawai",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"pegawai"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "StorePegawai",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama",
+											"value": "Abdul",
+											"type": "text"
+										},
+										{
+											"key": "total",
+											"value": "6000000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/pegawai",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"pegawai"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Jan 2022 05:49:27 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Jan 2022 05:49:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6ImhSYzZUVFlNaTZCeWg2a1RvSUluTXc9PSIsInZhbHVlIjoibERsK1dsVkpQUzNUR1ByczU5MkVNeXJxL0lHaVFZU0QvTVorNi9GcUVxZjlwWUIzVnhpRDBGYWU3QTVNQ2x6WlBHNlhydzhKYmdGejhzMVhWZkhxMlVsR2RYK2srMzlYN2J3cCtNRm1ORkFuSWxOUUhkTTllMVFIVWdnSDk4WVoiLCJtYWMiOiJkN2IxMTIwYzllY2ZjZDU5YmJiM2E2NmE1ODI5YjhlZmJiZDBjMjM0ZTViZWRlNzBmYzhhNjRlYjg4MzU2NzVjIiwidGFnIjoiIn0%3D; expires=Sat, 08-Jan-2022 07:49:27 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6Ikgwd1FwVW5BdnkxY1dEK0NMZk9HV0E9PSIsInZhbHVlIjoiQmxYcEVvdDdoSTFkeWxjdWg1VTc5cHY0dVJvcmdwbTUwdHlMNER4cEpOOXhhZnFRUkpmNEtkOGF1L1N1L3JXcW9YZkpUeGlIWXFrT21BNHpoRURDRjJLR05ZczdPaFRiOUFzRVl4UG5MUmV1bzlWTytvcWZPc3dSUVRpRmJ1RU4iLCJtYWMiOiIyNDQ2YmVmMDZmNTU2OWI5NmI3YTg5MzE3YmZlYjg3OWYxNDRkMzU0MzQ1ODQwYWY2ZDY4MDgzZGFkZDI3OTNlIiwidGFnIjoiIn0%3D; expires=Sat, 08-Jan-2022 07:49:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"Data success created\",\n    \"data\": {\n        \"nama\": \"Abdul\",\n        \"total\": \"6000000\",\n        \"updated_at\": \"2022-01-08T05:49:27.000000Z\",\n        \"created_at\": \"2022-01-08T05:49:27.000000Z\",\n        \"id_pegawais\": 3\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "gaji",
+			"item": [
+				{
+					"name": "GetGaji",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/gaji-pegawai?filter=2022-01",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"gaji-pegawai"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "2022-01"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetGaji",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/gaji-pegawai?filter=2022-01",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"gaji-pegawai"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": "2022-01"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Jan 2022 05:49:36 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Jan 2022 05:49:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6Ind5MjFsdjVjaHZxay91YlU0TVpaM2c9PSIsInZhbHVlIjoiemgxTkhvNTE0UCtlTnNqdkFtWXBQY2t2L2pZeVZnWGdlaFRITGpMeWZYeHlBa1E4OE91NFF5Tms0MENZUkJyeUIyV2ZBWHpncksrQ2VqeHdCUUh3Z3pUN2xwaitLYVowZ2w0RGRoQXhHY0YzTHJncHBhKzdjbkRYVEgwNTh0STMiLCJtYWMiOiI1MGY0ZDUwMDYyNTNmODBkMjRiNjYyM2Q5MTljMGFlNzMyYjExMmM3ODAzZGUwOTdiZTQ0YWMyNjc5N2IyMmI3IiwidGFnIjoiIn0%3D; expires=Sat, 08-Jan-2022 07:49:36 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6IjdkZTk0UDV5QTFjUGFwc21ENDdNV3c9PSIsInZhbHVlIjoieUJ3OUY4UDVtRWMrd1lGcUFralVINU95WHpSczBuVHM5YXh6NlM4VkxSazFkNDZqUWZQY1NxY0hsc0dMcExWWXV6Q2FqRUVnaGpJZ1EwRVhJTGJBdGRnMUprSFBwbmI0akI4eFVIUmg5SlJtaUpURFV1ZURFdFEwWml3dTl6UXkiLCJtYWMiOiI2ZTVmNDBiYTY4MTI5YTM3ZmY2YmM1MjBhZDM0ODY1Yjg5ODNmMTFkY2JjNDZhZDA5OWVlNDBhYzJlNjg4ODQwIiwidGFnIjoiIn0%3D; expires=Sat, 08-Jan-2022 07:49:36 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"meta\": {\n        \"filter\": \"2022-01\",\n        \"paginator\": {\n            \"item_total\": 2,\n            \"item_per_pages\": 2,\n            \"url_previous\": null,\n            \"url_next\": null\n        }\n    },\n    \"data\": [\n        {\n            \"Waktu\": \"2022-01-08 05:46\",\n            \"Nama_Pegawai\": \"RISKY\",\n            \"Total_Gaji\": \"Rp 8,500,000\"\n        },\n        {\n            \"Waktu\": \"2022-01-08 05:46\",\n            \"Nama_Pegawai\": \"SANDI\",\n            \"Total_Gaji\": \"Rp 4,500,000\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "StoreGajiPegawai",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_pegawais",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/gaji-pegawai",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"gaji-pegawai"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "StoreGajiPegawai",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id_pegawais",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{server}}/gaji-pegawai",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"gaji-pegawai"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Jan 2022 05:49:50 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Jan 2022 05:49:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6IkIzKzgvSnRTNWs4S0taemJjRXU4RlE9PSIsInZhbHVlIjoibGlWcmplZS96YnVQQ2Rpa1FwMG9ydkVjNlFNaWdiRTROSjFhZnFSN3QxQndtVFZIVkQxUHBHMUJOVlRLVmtOc21hWnhVbGMwNkdPZmRnVlhLeE5aTThiUkF6Tjc4WG1OUFFPaVhnbjRnZWtFYnF1Q09hZjRneDV6NFhPem5jRW4iLCJtYWMiOiIzMGY5YmZjZDY0ZTdlMTQ0ZWQ0NDQ0NTA4MzMzNTU0OWI4N2I1N2MxYzQwODVhYTJjMGNjMjk4YzViZWVjNzZjIiwidGFnIjoiIn0%3D; expires=Sat, 08-Jan-2022 07:49:50 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6IjYxemdVcUUrN0lpOGprNDRMVXp3Y1E9PSIsInZhbHVlIjoiaTdWR21GY05rK1hBZ2ZYNldqbkRCS1FjUXdvaEM4MldHRnpCTjB2ditOQmJVbEtIVTRjeWNuR1pDc3hrNmYvYXZiVlRMWHJKVm1rM3NFMzlaa1hHS1Q5UkwyL0R2Sys1dDNteC9ENHZPa3cxT2R5ZHRKVXplYTNyUTRCdWpsVGsiLCJtYWMiOiI5MThjYmVjMTdhMjA0NGU2OTE1ZDMxNzY0YjkwMDlkM2U2ZGRhMGNhOGY4YmQ1ZjcwYTJhMjE0NWMxYjI0ZjQxIiwidGFnIjoiIn0%3D; expires=Sat, 08-Jan-2022 07:49:50 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"Data success created\",\n    \"data\": {\n        \"id_pegawais\": 3,\n        \"total_gaji\": 6000000,\n        \"periods_gaji\": \"2022-01-08 05:49:50\",\n        \"updated_at\": \"2022-01-08T05:49:50.000000Z\",\n        \"created_at\": \"2022-01-08T05:49:50.000000Z\",\n        \"id_gajis\": 3\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "StoreGajiPegawaiBatch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{server}}/gaji-pegawai/batch",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"gaji-pegawai",
+								"batch"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "StoreGajiPegawaiBatch",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{server}}/gaji-pegawai/batch",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"gaji-pegawai",
+										"batch"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Jan 2022 05:50:15 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Jan 2022 05:50:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6IkkzTStEb0pIU0FMK2xJMndhVE8vZUE9PSIsInZhbHVlIjoiMDZKb2FTQlVkQXdJaG82ODVyb1k5eCtWNkk1eXdYMC9VQW9OMnRvdG16UVZyZkg5NWo0SXJnQS9Sc1JMZWFWdGlRZ3BzQkxjcVNiKzViVVdpNXRwdjB1ejlYbGRtVWQ2blJjZTdYWFg2YnNBajFYWmY1dXdtOGlNcWRsek1yV0QiLCJtYWMiOiI0MjY5NzE1OTUxNWZmZjE2MjIxYzcxNDE3NTNjMDgwOGEwMGYwMjMwYTUyYzc0ZDY5MGEwZThlMmQ2NjQ3MTYxIiwidGFnIjoiIn0%3D; expires=Sat, 08-Jan-2022 07:50:15 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6Ik9UOVFSSFd3T2puVWUyQ1lzUGVsZnc9PSIsInZhbHVlIjoic1Y1dlVQd1dRWFVVb1U3ZFhlRUpCWEVKWkFjSFBPNGFXNTRScE9lYTMxMERMdkpmR00zZFY5QXY1YlhLL216bGo2Um1TNE9oNUk5OVRvUGU5TEF1VGFwN0IvZnE5YVVraXppR25GVURQTnRvRFdLWSsxenFxRFZhU3NaSFoxTnMiLCJtYWMiOiJkNmRiOGY4YWI0ZDVjMjYxZWRkOGNiOWQ5N2FkMTAxZDZkNWE5MGQyY2ViOGQ0ZmFkZWRhYzgzNDI4MTM2NmY1IiwidGFnIjoiIn0%3D; expires=Sat, 08-Jan-2022 07:50:15 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"Data success created for batch = 2022-01 with total 1 data\",\n    \"data\": [\n        {\n            \"id_pegawais\": 4,\n            \"nama\": \"Indra\",\n            \"total\": 6000000,\n            \"created_at\": \"2022-01-08T05:50:09.000000Z\",\n            \"updated_at\": \"2022-01-08T05:50:09.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": "localhost:8000"
+		}
+	]
+}
